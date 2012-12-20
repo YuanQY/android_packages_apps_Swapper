@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="Swapper"
+    android:orderingFromXml="true"
+    android:title="@string/swapper_preference_title" >
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="startup"
+        android:summary="@string/startup_summary"
+        android:title="@string/startup_title" />
+
+    <EditTextPreference
+        android:defaultValue="/cache/swapfile.swp"
+        android:dialogTitle="@string/swapplace_dialog_title"
+        android:key="swapplace"
+        android:summary="@string/swapplace_summary"
+        android:title="@string/swapplace_title" >
+    </EditTextPreference>
+
+    <ListPreference
+        android:defaultValue="32"
+        android:dialogTitle="@string/swapsize_dialog_title"
+        android:entries="@array/swapsize"
+        android:entryValues="@array/swapsize_int"
+        android:key="swapsize"
+        android:summary="@string/swapsize_summary"
+        android:title="@string/swapsize_title" >
+    </ListPreference>
+    <ListPreference
+        android:defaultValue="10"
+        android:dialogTitle="@string/swappiness_dialog_title"
+        android:entries="@array/swappiness"
+        android:entryValues="@array/swappiness_int"
+        android:key="swappiness"
+        android:summary="@string/swappiness_summary"
+        android:title="@string/swappiness_title" >
+    </ListPreference>
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="swapperSafeUnmount"
+        android:summary="@string/swapperSafeUnmount_summary"
+        android:summaryOff="@string/swapperSafeUnmount_summary_off"
+        android:summaryOn="@string/swapperSafeUnmount_summary_on"
+        android:title="@string/swapperSafeUnmount_title" >
+    </CheckBoxPreference>
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="swapperSafeRemount"
+        android:summary="@string/swapperSafeRemount_summary"
+        android:summaryOff="@string/swapperSafeRemount_summary_off"
+        android:summaryOn="@string/swapperSafeRemount_summary_on"
+        android:title="@string/swapperSafeRemount_title" >
+    </CheckBoxPreference>
+
+    <PreferenceScreen
+        android:key="advanced"
+        android:summary="@string/advanced_summary"
+        android:title="@string/advanced_title" >
+        <PreferenceCategory
+            android:key="SwapPartCat"
+            android:title="@string/swapPartCat_title" >
+            <CheckBoxPreference
+                android:defaultValue="False"
+                android:key="swappartenabled"
+                android:summaryOff="@string/swapPartenabled_Off"
+                android:summaryOn="@string/swapPartenabled_On"
+                android:title="@string/swapPartenabled_title" >
+            </CheckBoxPreference>
+
+            <!--
+            EditTextPreference
+                android:defaultValue="/dev/block/mmcblk0p3"
+                android:key="swappartplace"
+                android:title="@string/swapPartplace_title" >
+            </EditTextPreference
+            -->
+            <EditTextPreference
+                android:defaultValue=""
+                android:key="swappartplace"
+                android:title="@string/swapPartplace_title" >
+            </EditTextPreference>
+        </PreferenceCategory>
+        <PreferenceCategory
+            android:key="SwapFineTunung"
+            android:title="@string/swapFineTunung_title" >
+            <CheckBoxPreference
+                android:defaultValue="True"
+                android:key="recreateswap"
+                android:summary="@string/recreateSwap_summary"
+                android:title="@string/recreateSwap_title" >
+            </CheckBoxPreference>
+            <CheckBoxPreference
+                android:defaultValue="True"
+                android:key="remakeswap"
+                android:summary="@string/remakeSwap_summary"
+                android:title="@string/remakeSwap_title" >
+            </CheckBoxPreference>
+        </PreferenceCategory>
+
+        <EditTextPreference
+            android:defaultValue="busybox"
+            android:dialogTitle="@string/busybox_dialog_title"
+            android:key="busybox"
+            android:summary="@string/busybox_summary"
+            android:title="@string/busybox_title" >
+        </EditTextPreference>
+    </PreferenceScreen>
+
+</PreferenceScreen>

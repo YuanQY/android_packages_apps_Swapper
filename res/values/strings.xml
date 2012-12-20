@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Swapper</string>
+
+    <string-array name="swapsize">
+        <item>1 MB</item>
+        <item>2 MB</item>
+        <item>3 MB</item>
+        <item>4 MB</item>
+        <item>6 MB</item>
+        <item>8 MB</item>
+        <item>12 MB</item>
+        <item>16 MB</item>
+        <item>24 MB</item>
+        <item>32 MB (recommended)</item>
+        <item>48 MB</item>
+        <item>64 MB</item>
+        <item>96 MB</item>
+        <item>128 MB</item>
+        <item>192 MB</item>
+        <item>256 MB</item>
+    </string-array>
+    <string-array name="swapsize_int">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>6</item>
+        <item>8</item>
+        <item>12</item>
+        <item>16</item>
+        <item>24</item>
+        <item>32</item>
+        <item>48</item>
+        <item>64</item>
+        <item>96</item>
+        <item>128</item>
+        <item>192</item>
+        <item>256</item>
+    </string-array>
+    <string-array name="swappiness">
+        <item>0 (disabled)</item>
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10 (recommended)</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>60 (system default)</item>
+        <item>80</item>
+        <item>100</item>
+    </string-array>
+    <string-array name="swappiness_int">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>60</item>
+        <item>80</item>
+        <item>100</item>
+    </string-array>
+
+    <string name="startup_text">Thank You for using swapper!\n
+Usage:\n
+-> On to enable swap\n
+-> Off to disable swap\n
+-> MENU button to access advanced settings\n
+If "On" not working on Your phone, try to download busybox (option in menu)\n
+MENU options:\n
+-> Swap\n
+-> -> Create - create swap file (used when autocreate is disabled)\n
+-> -> Reformat - format swap file/partition\n
+-> Configuration\n
+-> -> Settings - set up swap\n
+-> -> Info - get memory/swap information\n
+-> Busybox\n
+-> -> Download - download busybox\n
+-> -> Remove - delete busybox\n</string>
+    <!-- Engle -->
+    <string name="startup_summary">Enable swap and set swappiness at startup</string>
+    <string name="startup_title">Run swapper at startup</string>
+    <string name="swapplace_dialog_title">Swap place</string>
+    <string name="swapplace_title">Swap place</string>
+    <string name="swapplace_summary">File name for swap file.</string>
+    <string name="swapsize_dialog_title">Swap size</string>
+    <string name="swapsize_title">Swap size</string>
+    <string name="swapsize_summary">Size of swap file</string>
+    <string name="swappiness_dialog_title">Swappiness</string>
+    <string name="swappiness_title">Swappiness</string>
+    <string name="swappiness_summary">How much to swap</string>
+    <string name="swapperSafeUnmount_title">Safe Unmount</string>
+    <string name="swapperSafeUnmount_summary">Unmount Swap if sharing SD(Experimental)</string>
+    <string name="swapperSafeUnmount_summary_off">Swap will not be unmounted before sharing SD</string>
+    <string name="swapperSafeUnmount_summary_on">Swap will be unmounted before sharing SD</string>
+    <string name="swapperSafeRemount_title">Safe Remount</string>
+    <string name="swapperSafeRemount_summary">Remount Swap after sharing SD(Experimental)</string>
+    <string name="swapperSafeRemount_summary_off">Swap will not be mounted after sharing SD</string>
+    <string name="swapperSafeRemount_summary_on">Swap will be mounted after sharing SD</string>
+    <string name="advanced_title">Advanced preferences</string>
+    <string name="advanced_summary">For experienced users</string>
+    <string name="swapPartCat_title">Swap Partition</string>
+    <string name="swapPartenabled_title">Use swap partition</string>
+    <string name="swapPartenabled_Off">Using swap file</string>
+    <string name="swapPartenabled_On">Using swap partition</string>
+    <string name="swapPartplace_title">Swap partition</string>
+    <string name="swapFineTunung_title">Swap Fine Tuning</string>
+    <string name="recreateSwap_title">Recreate swap file</string>
+    <string name="recreateSwap_summary">Delete swap file after swapoff and create before swapon</string>
+    <string name="remakeSwap_title">Reformat swap</string>
+    <string name="remakeSwap_summary">Format swap each time swap is enabled</string>
+    <string name="busybox_dialog_title">Busybox location/command</string>
+    <string name="busybox_title">Busybox location/command</string>
+    <string name="busybox_summary">Location or command to execute for busybox, empty if busybox is not nessesary</string>
+    <string name="button_on">ON</string>
+    <string name="button_off">OFF</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="menu_swap">Swap</string>
+    <string name="menu_create">Create</string>
+    <string name="menu_reformat">Reformat</string>
+    <string name="menu_configuration">Configuration</string>
+    <string name="menu_info">Info</string>
+    <string name="menu_busybox" translatable="false">Busybox</string>
+    <string name="menu_busybox_download">Download</string>
+    <string name="menu_busybox_remove">Remove</string>
+    <string name="menu_item_settings">Settings</string>
+    <string name="menu_item_recreate">Recreate</string>
+    <string name="menu_item_format">Format</string>
+    <string name="waitings">Please wait...\n</string>
+    <string name="download_busybox_title">Please wait!</string>
+    <string name="download_busybox_summary">Downloading busybox...</string>
+    <string name="swappiness_msg">Swappiness: </string>
+    <string name="memory_info_msg" formatted="false">Memory:\t%s KB \n\tUsed:\t%s KB\n\tfree:\t%s KB\n</string>
+    <string name="swap_info_msg" formatted="false">  Swap:\t%s KB \n\tUsed:\t%s KB\n\tfree:\t%s KB\n</string>
+    <string name="read_error">Reading error. Please try one more time.</string>
+    <string name="command_create_file">Creating swap file</string>
+    <string name="command_format_file">Formatting swap</string>
+    <string name="command_swap_partition_enable">Swap partition is enabled</string>
+    <string name="command_busybox_start_download">Starting busybox download</string>
+    <string name="command_format_partition">Formatting swap partition</string>
+    <string name="command_busybox_downloaded">Busybox downloaded</string>
+    <string name="command_busybox_executable">Making busybox executable</string>
+    <string name="command_busybox_download_fail">Busybox download failed</string>
+    <string name="command_busybox_remove">Removing busybox</string>
+    <string name="command_swap_partition_off">Turning swap off(partition)</string>
+    <string name="command_swap_partition_on">Turning swap on(partition)</string>
+    <string name="command_swap_file_off">Turning swap off(file)</string>
+    <string name="command_swap_file_on">Turning swap on(file)</string>
+    <string name="command_swap_file_remove">Removing swap file</string>
+    <string name="command_change_permission">Changing permissions</string>
+    <string name="command_enable_swap_partition">Enabling swap(partition)</string>
+    <string name="command_enable_swap_file">Enabling swap(file)</string>
+    <string name="command_setting_swappiness">Setting swappiness</string>
+    <string name="ok"> OK</string>
+    <string name="fail"> Fail</string>
+    <string name="all_down">All done!</string>
+    <string name="button_ok">OK</string>
+    <string name="busybox_install_dialog_title">Install busybox?</string>
+    <string name="swapper_preference_title">Swapper preferences</string>
+
+</resources>

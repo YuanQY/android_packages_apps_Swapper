@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_height="fill_parent"
+	android:layout_width="fill_parent">
+	<ScrollView android:id="@+id/ScrollView02"
+		android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_gravity="center">
+		<TableLayout android:id="@+id/TableLayout01"
+			android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_width="wrap_content">
+			
+			<TableRow android:id="@+id/TableRow01" android:layout_height="wrap_content" android:layout_width="wrap_content">
+				<Button android:id="@+id/SwapOn_32" android:layout_height="fill_parent"
+					android:layout_width="fill_parent" android:text="@string/button_on" android:minWidth="80px"></Button>
+				<Button android:id="@+id/SwapOff" android:layout_width="fill_parent"
+					android:layout_height="fill_parent" android:text="@string/button_off" android:minWidth="80px"></Button>
+				
+				
+			</TableRow>
+			
+			
+			
+			
+			
+			
+
+
+
+		</TableLayout>
+	</ScrollView>
+	<ScrollView android:id="@+id/ScrollView01"
+		android:layout_height="fill_parent" android:layout_width="fill_parent">
+		<TextView android:id="@+id/LogText" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="@string/startup_text"></TextView>
+	</ScrollView>
+</LinearLayout>

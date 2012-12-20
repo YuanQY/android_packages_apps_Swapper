@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Swapper</string>
+
+    <string-array name="swapsize">
+        <item>1 MB</item>
+        <item>2 MB</item>
+        <item>3 MB</item>
+        <item>4 MB</item>
+        <item>6 MB</item>
+        <item>8 MB</item>
+        <item>12 MB</item>
+        <item>16 MB</item>
+        <item>24 MB</item>
+        <item>32 MB (推荐)</item>
+        <item>48 MB</item>
+        <item>64 MB</item>
+        <item>96 MB</item>
+        <item>128 MB</item>
+        <item>192 MB</item>
+        <item>256 MB</item>
+    </string-array>
+    <string-array name="swapsize_int">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>6</item>
+        <item>8</item>
+        <item>12</item>
+        <item>16</item>
+        <item>24</item>
+        <item>32</item>
+        <item>48</item>
+        <item>64</item>
+        <item>96</item>
+        <item>128</item>
+        <item>192</item>
+        <item>256</item>
+    </string-array>
+    <string-array name="swappiness">
+        <item>0 (禁用)</item>
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10 (推荐)</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>60 (系统默认)</item>
+        <item>80</item>
+        <item>100</item>
+    </string-array>
+    <string-array name="swappiness_int">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>60</item>
+        <item>80</item>
+        <item>100</item>
+    </string-array>
+
+    <string name="startup_text">感谢您使用 swapper!\n
+使用用法:\n
+-> 开启将启用交换分区或文件\n
+-> 关闭将将禁用交换分区或文件\n
+-> 菜单按钮显示高级设置\n
+如果"开启"在您的设备上不工作, 请尝试下载busybox(菜单的选项)\n
+菜单选项:\n
+-> 交换分区/文件\n
+-> -> 创建 - 创建交换分区/文件 (请在自动创建被禁用时使用)\n
+-> -> 重新格式化 - 重新格式化交换分区/文件\n
+-> 配置\n
+-> -> 设置 - 设置虚拟内存\n
+-> -> 信息 - 获取内存/虚拟内存信息\n
+-> Busybox\n
+-> -> 下载 - 下载 busybox\n
+-> -> 删除 - 删除 busybox\n</string>
+    <!-- Engle -->
+    <string name="startup_summary">启动时启用虚拟内存</string>
+    <string name="startup_title">启动时运行 swapper</string>
+    <string name="swapplace_dialog_title">交换文件的位置</string>
+    <string name="swapplace_title">交换文件的位置</string>
+    <string name="swapplace_summary">交换文件的文件名.</string>
+    <string name="swapsize_dialog_title">交换分区/文件大小</string>
+    <string name="swapsize_title">虚拟内存大小</string>
+    <string name="swapsize_summary">交换分区/文件大小</string>
+    <string name="swappiness_dialog_title">Swappiness</string>
+    <string name="swappiness_title">Swappiness</string>
+    <string name="swappiness_summary">使用交换分区/文件的积极程度</string>
+    <string name="swapperSafeUnmount_title">安全卸载</string>
+    <string name="swapperSafeUnmount_summary">安全卸载交换分区/文件(交换分区/文件在SD卡上)</string>
+    <string name="swapperSafeUnmount_summary_off">共享SD卡前不卸载交换分区/文件</string>
+    <string name="swapperSafeUnmount_summary_on">共享SD卡前卸载虚交换分区/文件</string>
+    <string name="swapperSafeRemount_title">安全再次挂载</string>
+    <string name="swapperSafeRemount_summary">共享SD卡后再次挂载交换分区/文件</string>
+    <string name="swapperSafeRemount_summary_off">共享SD卡后不再挂载交换分区/文件</string>
+    <string name="swapperSafeRemount_summary_on">共享SD卡后再次挂载交换分区/文件</string>
+    <string name="advanced_title">高级设置</string>
+    <string name="advanced_summary">有经验的用户</string>
+    <string name="swapPartCat_title">交换分区</string>
+    <string name="swapPartenabled_title">使用交换分区</string>
+    <string name="swapPartenabled_Off">使用交换文件</string>
+    <string name="swapPartenabled_On">使用交换分区</string>
+    <string name="swapPartplace_title">交换分区</string>
+    <string name="swapFineTunung_title">微调交换文件</string>
+    <string name="recreateSwap_title">重建交换文件</string>
+    <string name="recreateSwap_summary">关闭交换后删除交换文件, 开启交换前再次创建交换文件</string>
+    <string name="remakeSwap_title">重新格式化交换分区/文件</string>
+    <string name="remakeSwap_summary">每次允许使用虚拟内存时格式化交换分区/文件</string>
+    <string name="busybox_dialog_title">Busybox 位置/命令</string>
+    <string name="busybox_title">Busybox 位置/命令</string>
+    <string name="busybox_summary">Busybox 命令所在位置或执行命令, 如果不需要使用  Busybox 保持字段为空即可</string>
+    <string name="button_on">开启</string>
+    <string name="button_off">关闭</string>
+    <string name="button_cancel">取消</string>
+    <string name="menu_swap">交换分区/文件</string>
+    <string name="menu_create">创建</string>
+    <string name="menu_reformat">重新格式化</string>
+    <string name="menu_configuration">配置</string>
+    <string name="menu_info">信息</string>
+    <string name="menu_busybox_download">下载</string>
+    <string name="menu_busybox_remove">删除</string>
+    <string name="menu_item_settings">设置</string>
+    <string name="menu_item_recreate">重新创建</string>
+    <string name="menu_item_format">格式化</string>
+    <string name="waitings">请等待...\n</string>
+    <string name="download_busybox_title">请等待!</string>
+    <string name="download_busybox_summary">正在下载 Busybox...</string>
+    <string name="swappiness_msg">Swappiness: </string>
+    <string name="memory_info_msg" formatted="false">\t\t内存:\t%s KB \n\t\t已用:\t%s KB\n\t\t空闲:\t%s KB\n</string>
+    <string name="swap_info_msg" formatted="false">虚拟内存:\t%s KB \n\t\t已用:\t%s KB\n\t\t空闲:\t%s KB\n</string>
+    <string name="read_error">读取错误. 请重试.</string>
+    <string name="command_create_file">正在创建交换文件</string>
+    <string name="command_format_file">正在格式化交换文件</string>
+    <string name="command_swap_partition_enable">开启交换分区</string>
+    <string name="command_busybox_start_download">正在开始下载 busybox</string>
+    <string name="command_format_partition">正在格式化交换分区</string>
+    <string name="command_busybox_downloaded">Busybox 已下载</string>
+    <string name="command_busybox_executable">使 busybox 可执行</string>
+    <string name="command_busybox_download_fail">Busybox 下载失败</string>
+    <string name="command_busybox_remove">正在删除 busybox</string>
+    <string name="command_swap_partition_off">正在关闭交换分区</string>
+    <string name="command_swap_partition_on">正在开启交换分区</string>
+    <string name="command_swap_file_off">正在关闭交换文件</string>
+    <string name="command_swap_file_on">正在开启交换文件</string>
+    <string name="command_swap_file_remove">正在删除交换文件</string>
+    <string name="command_change_permission">正在更改权限</string>
+    <string name="command_enable_swap_partition">正在启用交换分区</string>
+    <string name="command_enable_swap_file">正在启用交换文件</string>
+    <string name="command_setting_swappiness">设置 Swappiness</string>
+    <string name="ok"> 成功</string>
+    <string name="fail"> 失败</string>
+    <string name="all_down">全部完成!</string>
+    <string name="button_ok">确定</string>
+    <string name="busybox_install_dialog_title">是否安装 Busybox?</string>
+    <string name="swapper_preference_title">Swapper 配置</string>
+
+</resources>

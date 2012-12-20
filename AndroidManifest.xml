@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="lv.n3o.swapper2" android:versionName="0.2.0" android:versionCode="200">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
+    <application android:icon="@drawable/icon" android:label="@string/app_name"
+          android:allowClearUserData="true" android:persistent="false">
+        <activity android:name=".Swapper" android:label="@string/app_name"
+    android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SwapperPreferences" android:label="@string/app_name"></activity>
+        <receiver android:name=".SwapperAutorun">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".SwapperSafeUnmount">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_EJECT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".SwapperSafeRemount">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-sdk android:minSdkVersion="16" />
+</manifest> 
